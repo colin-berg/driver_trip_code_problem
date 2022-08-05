@@ -8,13 +8,13 @@ class Trip:
         self.start_time = start_time
         self.end_time = end_time
         self.miles = miles 
-        self.timedelta = self.__get_timedelta()
+        self.time_delta = self.__get_time_delta()
         self.hours = self.__get_hours()
         self.mph = float(self.miles) / self.hours
 
     #public method(s)
     def get_trip_info(self):
-        return self.start_time, self.end_time, self.miles, self.timedelta, self.hours, self.mph
+        return self.start_time, self.end_time, self.miles, self.time_delta, self.hours, self.mph
 
     
     #private method(s)
@@ -24,7 +24,7 @@ class Trip:
         return end_time - start_time
         
     def __get_hours(self):
-        return self.timedelta.total_seconds() / 3600
+        return self.time_delta.total_seconds() / 3600
         
 
 

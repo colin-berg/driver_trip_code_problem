@@ -13,7 +13,7 @@ class Trip:
         self.mph = float(self.miles) / self.hours
 
     #public method(s)
-    def get_tripinfo(self):
+    def get_trip_info(self):
         return self.start_time, self.end_time, self.miles, self.timedelta, self.hours, self.mph
 
     

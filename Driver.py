@@ -14,7 +14,7 @@ class Driver:
         self.trips.append(trip)
 
   # add function to summarize trip info 
-    def sum_tripinfo(self):
+    def sum_trip_info(self):
         self.trips 
 
     # total miles traveled per trip 

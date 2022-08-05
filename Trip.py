@@ -18,7 +18,7 @@ class Trip:
 
     
     #private method(s)
-    def __get_timedelta(self):
+    def __get_time_delta(self):
         start_time = datetime.strptime(self.start_time, "%H:%M")
         end_time = datetime.strptime(self.end_time, "%H:%M")
         return end_time - start_time
